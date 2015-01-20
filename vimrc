@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/modelica'
 Plugin 'vim-scripts/modeliner'
+Plugin 'vim-scripts/deb.vim'
 Plugin 'sukima/xmledit'
 Plugin 'valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic.git'
