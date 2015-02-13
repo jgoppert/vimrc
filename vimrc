@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/modelica'
+Plugin 'vim-scripts/deb.vim'
 Plugin 'vim-scripts/modeliner'
 Plugin 'sukima/xmledit'
 Plugin 'valloric/YouCompleteMe'
@@ -17,6 +18,7 @@ Plugin 'scrooloose/syntastic.git'
 Plugin 'scrooloose/nerdcommenter.git'
 Plugin 'fs111/pydoc.vim'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'jlanzarotta/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,7 +37,7 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-set background=dark
+"set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
