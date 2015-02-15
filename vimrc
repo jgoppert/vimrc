@@ -10,7 +10,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/modelica'
-Plugin 'vim-scripts/deb.vim'
 Plugin 'vim-scripts/modeliner'
 Plugin 'vim-scripts/deb.vim'
 Plugin 'sukima/xmledit'
