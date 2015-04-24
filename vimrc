@@ -72,3 +72,7 @@ set statusline+=%*
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
+
+let g:ycm_confirm_extra_conf = 0
+
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
