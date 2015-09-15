@@ -37,7 +37,7 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=light
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -65,15 +65,23 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
 
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 
 let g:ycm_confirm_extra_conf = 0
 
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+
+colorscheme default
+
+set ts=4
+set sw=4
+set sts=0
+
+set ruler
