@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/modelica'
 Plugin 'vim-scripts/modeliner'
-Plugin 'vim-scripts/deb.vim'
 Plugin 'sukima/xmledit'
 Plugin 'valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic.git'
@@ -67,18 +66,26 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
 
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 let g:ycm_confirm_extra_conf = 0
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 
 set clipboard^=unnamedplus
-set ts=4
-set sw=4
 
 au BufNewFile,BufRead *.g4 set filetype=antlr3
+
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+
+colorscheme default
+
+set ts=4
+set sw=4
+set sts=0
+
+set ruler
