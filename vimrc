@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdcommenter.git'
 Plugin 'fs111/pydoc.vim'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'rollxx/vim-antlr'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,7 +38,8 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=dark
+colorscheme koehler
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -69,7 +71,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:ycm_confirm_extra_conf = 0
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
+
+set clipboard^=unnamedplus
+set ts=4
+set sw=4
+
+au BufNewFile,BufRead *.g4 set filetype=antlr3
