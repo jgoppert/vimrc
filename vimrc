@@ -35,11 +35,6 @@ if has("syntax")
   syntax on
 endif
 
-" If using a dark background within the editing area and syntax highlighting
-" turn on this option as well
-set background=dark
-colorscheme koehler
-
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
@@ -82,10 +77,14 @@ au BufNewFile,BufRead *.g4 set filetype=antlr3
 
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
-colorscheme default
-
 set ts=4
 set sw=4
 set sts=0
-
 set ruler
+
+" If using a dark background within the editing area and syntax highlighting
+" turn on this option as well
+colorscheme koehler 
+set background=light
+
+
