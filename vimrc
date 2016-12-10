@@ -85,6 +85,6 @@ set ruler
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 colorscheme koehler 
-set background=light
+set background=dark
 
 
