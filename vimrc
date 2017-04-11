@@ -12,7 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/modelica'
 Plugin 'vim-scripts/modeliner'
 Plugin 'sukima/xmledit'
-"Plugin 'valloric/YouCompleteMe'
+Plugin 'valloric/YouCompleteMe'
+"Plugin 'python-mode/python-mode.git'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'scrooloose/nerdcommenter.git'
 Plugin 'fs111/pydoc.vim'
@@ -70,10 +71,12 @@ let g:ycm_confirm_extra_conf = 0
 "let g:syntastic_auto_loc_list = 1
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
+let g:syntastic_python_python_exec = '/usr/bin/python3'
 
 set clipboard^=unnamedplus
 
 au BufNewFile,BufRead *.g4 set filetype=antlr3
+au BufNewFile,BufRead *.launch set filetype=xml ts=2 sw=2 et
 
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
